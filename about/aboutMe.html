@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* Reset default margin and padding for all elements */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(65, 1, 124);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(36, 4, 67);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgba(245, 97, 46, 1);
+        }
+
+        .about-me {
+            background-color: rgb(65, 1, 124);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            padding: 40px;
+        }
+
+        .about-me h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .about-me p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .about-me .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 25px;
+            height: 0;
+        }
+
+        .about-me iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Style for the Experience section */
+        .experience {
+            background-color: rgb(65, 1, 124);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            padding: 40px;
+        }
+
+        .experience h2 {
+            font-size: 2rem;
+            margin-bottom: 20px; /* Reduce margin to improve alignment */
+        }
+
+        .experience-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .verticle {
+            flex: 1;
+            margin: 0 10px;
+            text-align: center;
+        }
+
+        .image-top {
+            width: 120px;
+            height: 120px;
+            border-radius: 60%;
+            margin-bottom: 10px;
+        }
+
+        .verticle-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: rgba(245, 97, 46, 1); /* Apply the orange color */
+        }
+
+        .verticle-desc {
+            font-size: 1rem; /* Adjust font size for better readability */
+            color: grey; /* Apply the grey color */
+        }
+
+        .verticle-desc ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .verticle-desc ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Style for the Certification section */
+        .certifications {
+            background-color: rgb(65, 1, 124);
+            color: rgb(255, 255, 255);
+            font-family: 'Poppins', sans-serif;
+            padding: 40px;
+        }
+
+        .certifications h2 {
+            margin-top: 20px;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .certification-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap to the next row if necessary */
+            justify-content: space-between;
+        }
+
+        .certification {
+            flex: 0 0 calc(33.33% - 20px); /* Adjust width as needed, considering margins */
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .certification-image {
+            width: 100%;
+            max-width: 400px; /* Adjust the maximum width of certification images */
+            height: 100PX;
+            border-radius: 5px; 
+        }   
+
+
+
+        .Internships-image {
+            width: 150%;
+            max-width: 250px; /* Adjust the maximum width of certification images */
+            height: 200PX;
+            border-radius: 5px; 
+        }  
+
+
+        .I-image {
+            width: 1000%;
+            max-width: 1000px; /* Adjust the maximum width of certification images */
+            height: 200PX;
+            margin-left: 100px;
+            border-radius: 5px; 
+            margin-bottom: 0px;
+        }  
+
+        .certification-title {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .I-title {
+            margin-top: 0px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            margin-left: 300px;
+        }
+
+/* Style for the Education section */
+.education {
+    background-color: rgb(65, 1, 124);
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px;
+}
+
+.education h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.education-item {
+    display: flex; /* Use Flexbox to align image and details horizontally */
+    align-items: center; /* Vertically center align items */
+}
+
+.education-image {
+    width: 400px; /* Adjust the image width as needed */
+    height: auto;
+    margin-right: 100px; /* Add spacing between image and details */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.education-details {
+    font-size: 1rem;
+}
+
+.education-details h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgba(245, 97, 46, 1);
+}
+
+
+/* Add any additional styles you may need */
+
+
+/* Add any additional styles you may need */
+
+
+        /* Add any additional styles you may need */
+    </style>
+</head>
+<body>
+    <section class="about-me">
+        <h2>About Me</h2>
+        <p>Hi, I'm Shivam Bahuguna a passionate data scientist with a deep love for exploring the world of data and turning it into meaningful insights. Here's a glimpse of my journey:</p>
+
+        <!-- Introduction Video (You can embed your video here) -->
+        <div class="video-container">
+            <!-- Replace this with your video embed code -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+       
+
+
+    <!-- experience -->
+    <section class="experience">
+        <h2>Experience</h2>
+        <div class="experience-container">
+            <div class="verticle">
+                <img class="image-top" src="tcs.webp" alt="">
+                <div class="verticle-title">AI/ML Engineer</div>
+                <div class="verticle-desc">
+                    <ul>
+                        <li>Experienced AI/ML Engineer adept at orchestrating end-to-end project lifecycles, implementing cutting-edge algorithms, harnessing deep learning, and advanced techniques to optimize system performance and user satisfaction.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="verticle">
+                <img class="image-top" src="converse.png"">
+                <div class="verticle-title">Data Engineer</div>
+                <div class="verticle-desc">
+                    <ul>
+                        <li>Experienced Data Engineer proficient in architecting and managing cloud-based ETL pipelines, ensuring efficient data processing and storage for seamless analytics and decision-making.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="verticle">
+                <img class="image-top" src="nike.png" alt="">
+                <div class="verticle-title">SAP Analyst</div>
+                <div class="verticle-desc">
+                    <ul>
+                        <li>Experienced SAP Analyst specializing in Business Intelligence (BI) and Business Warehouse (BW) solutions, adept at configuring and optimizing SAP systems to drive data-driven insights and enhance operational efficiency across the organization.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- education -->
+    <section class="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <a href="https://www.upes.ac.in/">
+                <img class="education-image" src="UPES.jpeg" alt="University">
+            </a>
+            <div class="education-details">
+                <h3>University of Petroleum and Energy Studies</h3>
+                <p>Degree: Bachelor of Technology</p>
+                <p>Field of Study: Petroleum Engineering </p>
+                <p>Year: 2017 - 2021</p>
+                <p>GPA: 7.28 </p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- certifications -->
+
+    <section class="certifications">
+        <h2>Certifications</h2>
+        <div class="certification-container">
+            <div class="certification">
+                <a href="https://www.credly.com/badges/814ae9f7-e2e8-459a-9d9d-48cada467cac/linked_in?t=s0oqmf">
+                    <img class="certification-image" src="AMAZON.png" alt="Certificate 1">
+                </a>
+                <div class="certification-title">AWS Certified Cloud Practitioner</div>
+            </div>
+        
+            <div class="certification">
+                <a href="https://google.accredible.com/240fae28-808c-4a97-b0a3-d71bd7aec1f2">
+                    <img class="certification-image" src="GOOGLE.png" alt="Certificate 2">
+                </a>
+                <div class="certification-title">GCP Associate Cloud Engineer</div>
+            </div>
+            <!-- Add more certification items as needed -->
+        </div>
+    </section>
+
+
+    <section class="certifications">
+        <h2>Internships</h2>
+        <div class="certification-container">
+            <div class="certification">
+                <a href="C:\Users\DELL\Desktop\Portfolio-master\about\ONGC_C.PNG">
+                    <img class="Internships-image" src="C:\Users\DELL\Desktop\Portfolio-master\about\ONGC.png" alt="Certificate 1">
+                </a>
+                <div class="certification-title">Well Planning: Casing Sheet Selection & Drill String Design</div>
+            </div>
+
+        
+            <div class="certification">
+                <a href="https://www.example.com/certificate2">
+                    <img class="Internships-image" src="C:\Users\DELL\Desktop\Portfolio-master\about\iovl.png" alt="Certificate 2">
+                </a>
+                <div class="certification-title">LNG Storage at Satellite Sation on consumer point</div>
+            </div>
+
+
+            <section class="certifications">
+                
+                <div class="certification-container">
+                    <div class="certification">
+                        <a href="C:\Users\DELL\Desktop\Portfolio-master\about\PE_C.PNG">
+                            <img class="I-image" src="C:\Users\DELL\Desktop\Portfolio-master\about\pe.png" alt="Certificate 1">
+                        </a>
+            <!-- Add more certification items as needed -->
+        </div>
+    </section>
+    <div class="I-title">
+    
+    Summer Internship in Petroleum Engineering at the Arab Oil and Gas Academy
+                    </div>
+    
+
+    
+
+
+</body>
+</html>

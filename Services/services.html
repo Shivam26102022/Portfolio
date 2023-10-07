@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Video Slider</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Reset default margin and padding for all elements */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(65, 1, 124);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+
+                /* Styling for the service section */
+                .section {
+            background-color: rgb(65, 1, 124);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            padding: 40px;
+            margin: 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        
+        
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: rgba(245, 97, 46, 1);
+            text-align: center;
+        }
+
+        .section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: rgba(245, 97, 46, 1);
+            text-align: left
+        }
+
+        .section p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #ffc2c2;
+            text-align: left;
+        }
+
+        /* Styling for the video slider container */
+        .video-slider-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Styling for individual video containers */
+        .video-container {
+            width: 100%;
+            opacity: 0.7;
+            transition: opacity 0.4s ease-in-out;
+            flex-direction: column;
+            display: none; /* Initially hide all videos */
+        }
+
+        .video-container.active {
+            display: block; /* Show the active video */
+        }
+
+        .video-container:hover {
+            opacity: 1;
+        }
+
+        /* Styling for the arrow buttons */
+        .arrow-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .prev-button {
+            left: 20px;
+        }
+
+        .next-button {
+            right: 20px;
+        }
+
+        .video-slider-row {
+            display: flex;
+            align-items: center;
+            transition: transform 0.4s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="section">
+        <h2>Service - Word Weave (Text Generation)</h2>
+        <p>
+            In the bustling world of modern business, there exists a remarkable tool called "Word Weave." This extraordinary service taps into the boundless potential of Generative AI and Large Language Models (LLMs) to spin tales and craft written wonders that resonate with people from all walks of life.
+        </p>
+        <p>
+            Picture yourself as a business owner, eager to convey your company's message in a compelling way. Or perhaps you're an HR professional seeking to attract top talent by creating enticing job descriptions. Maybe you're a content marketer aiming to produce engaging articles for your audience. Word Weave is here to help, weaving stories that captivate and inspire.
+        </p>
+        <p>
+            In the end, Word Weave isn't just about words; it's about stories that drive engagement, inspire action, and foster meaningful connections in the dynamic world of business.
+        </p>
+
+        <!-- Video Slider Container -->
+        <div class="video-slider-container">
+            <!-- Video Slider Row -->
+            <div class="video-slider-row">
+                <!-- Video Section 1: Resume Generation -->
+                <div class="video-container active">
+                    <h3>Resume Generation</h3>
+                    <p>
+            When it comes to crafting the perfect resume, Word Weave becomes your trusted partner. Our service not only generates traditional resumes but also provides the unique feature of creating digital interactive resumes. You can provide job details, and it will create a compelling resume that not only communicates qualifications but also paints a vivid picture of your professional journey.
+                    </p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="C:\Users\DELL\Desktop\Portfolio-master\Services\Resume.mp4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Video Section 2: Job Description Generation -->
+                <div class="video-container">
+                    <h3>Job Description Generation</h3>
+                    <p>
+            For businesses looking to streamline their HR processes, Word Weave is a game-changer. It can craft job descriptions that not only meet industry standards but also stand out. Just describe the position, and watch as it weaves a narrative that attracts the best candidates.
+                    </p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="C:\Users\DELL\Desktop\Portfolio-master\Services\JD.MP4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Video Section 3: Chat Bot Generation -->
+                <div class="video-container">
+                    <!-- Description for Chat Bot Generation -->
+                    <h3>Chat Bot Generation</h3>
+                    <p>
+                    Elevate your online presence with our advanced Chat Bot Generation service. Our cutting-edge technology empowers businesses to engage with their audience like never before. Whether you need automated customer support, interactive marketing campaigns, or personalized user experiences, our chat bots are here to deliver.
+                    </p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="C:\Users\DELL\Desktop\Portfolio-master\Services\Chat bot.MP4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+    </section>>
+
+
+            <!-- Arrow Buttons -->
+            <button class="arrow-button prev-button" onclick="slideVideos(-1)">←</button>
+            <button class="arrow-button next-button" onclick="slideVideos(1)">→</button>
+        </div>
+    </div>
+
+
+    
+    <section class="section">
+        <h2>Service - Sound Scribe (Audio Generation)</h2>
+        <p>
+            Sound Scribe is your gateway to a world of dynamic audio content creation. Our innovative audio generation service leverages cutting-edge technology to bring your ideas to life through sound. Whether you need text transformed into speech, voice cloning, or voice enhancement, Sound Scribe has you covered.
+        </p>
+
+        <p>
+            Sound Scribe isn't just about sound; it's about creating audio experiences that captivate, inform, and inspire. Our services empower you to harness the potential of sound in exciting and innovative ways.
+        </p>
+        
+
+                        <h3>Text to Speech</h3>
+                        <p>
+                With our Text to Speech service, Sound Scribe converts written words into lifelike spoken language. Whether it's for accessibility, content narration, or creative projects, you can count on us to give your text a voice that resonates.
+                        </p>
+                    </div>
+    
+                   
+                    <div class="video-container2">
+                        <h3>Voice Cloning </h3>
+                        <p>
+                Sound Scribe's Voice Cloning service allows you to replicate and personalize voices for various applications. Whether it's for virtual assistants, entertainment, or preserving a loved one's voice, our technology ensures a seamless and authentic cloning experience.
+                        
+                    </div>
+
+
+                <section class="video-container2">
+                    <h3>Voice Enhancement</h3>
+                    <p>
+                        Sound Scribe's Voice Enhancement service takes audio quality to the next level. Whether you need to remove noise, clarify recordings, or enhance the richness of a voice, we have the tools to make your audio stand out with crystal-clear precision.
+                    </p>
+
+        </section>
+
+
+        <!-- Service Section 3: Image Generation -->
+    <section class="section">
+        <h2>Service - Pixel Weave (Visual Generation)</h2>
+        <p>
+            Sound Scribe is your gateway to a world of dynamic audio content creation. Our innovative audio generation service leverages cutting-edge technology to bring your ideas to life through sound. Whether you need text transformed into speech, voice cloning, or voice enhancement, Sound Scribe has you covered.
+        </p>
+    
+        <h3>Image Generation </h3>
+        <p>
+            Embark on a visual journey with Pixel Weave's Image Generation service. Our expertise lies in crafting striking and unique images that captivate your audience. Whether you need custom illustrations, photo generation, or innovative visuals, Pixel Weave transforms your ideas into visually stunning realities.        
+        </p>
+    
+        <h3>Video Generation </h3>
+        <p>
+            Dive into the realm of video excellence with Pixel Weave's Video Generation service. We specialize in crafting compelling videos that tell your story with impact. Whether it's promotional videos, explainer animations, or engaging multimedia content, we're here to turn your concepts into captivating visual narratives.
+        </p>
+        <p>
+            At Pixel Weave, we believe that images are more than just pixels; they are the storytellers of the digital age. Join us in creating visual narratives that leave a lasting impression and elevate your brand's presence.
+        </p>
+    </section>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        const videoSliderRow = document.querySelector('.video-slider-row');
+        const videoContainers = document.querySelectorAll('.video-container');
+        let currentIndex = 0;
+
+        function slideVideos(direction) {
+            // Calculate the new index
+            currentIndex += direction;
+
+            // Ensure the index stays within bounds
+            if (currentIndex < 0) {
+                currentIndex = videoContainers.length - 1;
+            } else if (currentIndex >= videoContainers.length) {
+                currentIndex = 0;
+            }
+
+            // Hide all videos
+            videoContainers.forEach(video => {
+                video.classList.remove('active');
+            });
+
+            // Show the selected video
+            videoContainers[currentIndex].classList.add('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title> Shivam's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(65, 1, 124);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(36, 4, 67);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+        nav ul li a:hover {
+
+            color: rgba(245, 97, 46, 255);
+        }
+
+        .left {
+            font-size: 1.8rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 120px 0;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            font-size: 3rem;
+
+        }
+
+
+        .rightSection img {
+            width: 80%;
+            margin: 50px 0;
+
+        }
+
+        .orange {
+            color: rgba(245, 97, 46, 255);
+
+        }
+
+        #element {
+            color: rgba(245, 97, 46, 255);
+        }
+
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        main hr{
+            border: 0;
+            background:  rgb(255, 255, 255);
+            height: 1.8px;
+            margin: 40px 84px;
+
+        }
+        .secondSection h1{
+            font-size: 2rem;
+        }
+
+        .text-grey{
+            color:grey
+        }
+
+        .image-top{
+            width:23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+        .secondSection .box{
+            background: grey;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .verticle{
+            height: 93px;
+            width: 2px;
+            background: grey;
+            margin:0 140px;
+        }
+
+        .verticle-title{
+            position: relative;
+            top: 75px;
+            width:150px;
+        }
+
+        .verticle-desc{
+            position:relative;
+            top: 86px;
+            width: 150px;
+            font-size: 9px;
+        }
+        .verticle-desc li{
+            list-style-type: '👉';
+
+        }
+
+ /* Style for the Certification section */
+.certifications {
+    max-width: 80vw;
+            margin: auto;
+            height: 50vh;
+}
+
+.certifications h2 {
+    font-size: 2rem; /* Match style2.css */
+    margin-bottom: 20px;
+    color: white;
+}
+
+.certification-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row if necessary */
+    justify-content: space-between;
+}
+
+.certification {
+    flex: 0 0 calc(50.33% - 10px); /* Adjust width as needed, considering margins */
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.certification-image {
+    width: 80%;
+    max-width: 350px; /* Adjust the maximum width of certification images */
+    height: 100px; /* Match style2.css */
+    border-radius: 5px;
+}
+
+.certification-title {
+    margin-top: 15px;
+    flex: 0 0 calc(26.33% - 20px); /* Adjust width as needed, considering margins */
+    margin-bottom: 15px;
+    font-size: 0.9rem; /* Match style2.css */
+    text-align: start; /* Match style2.css */
+}
+
+/* Style for the Education section */
+.education {
+    max-width: 80vw;
+            margin: auto;
+            height: 50vh;
+}
+
+.education h2 {
+    font-size: 2rem; /* Match style2.css */
+    margin-bottom: 20px;
+    color: white;
+}
+
+.education-item {
+    display: flex; /* Use Flexbox to align image and details horizontally */
+    align-items: center; /* Vertically center align items */
+}
+
+.education-image {
+    width: 400px; /* Adjust the image width as needed */
+    height: auto;
+    margin-right: 100px; /* Add spacing between image and details */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.education-details {
+    font-size: 0.9rem; /* Match style2.css */
+    text-align: center; /* Match style2.css */
+}
+
+.education-details h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgba(245, 97, 46, 1);
+    text-align: center; /* Match style2.css */
+}
+
+
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shivam's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="C:\Users\DELL\Desktop\Portfolio-master\Portfolio\index.html">Home</a></li>
+                    <li><a href="C:\Users\DELL\Desktop\Portfolio-master\about\aboutMe.html">About</a></li>
+                    <li><a href="C:\Users\DELL\Desktop\Portfolio-master\Services\services.html">Services</a></li>
+                    <li><a href="C:\Users\DELL\Desktop\Portfolio-master\Project\project.html">Projects</a></li>
+                    <li><a href="C:\Users\DELL\Desktop\Portfolio-master\Contact Me\Contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is
+                <br>
+                <span class="orange">Shivam Bahuguna</span>
+                <div>and I am a passionate </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+
+        </section>
+<hr>
+        <section class="secondSection">
+            <span class="text-grey">What I have done so far</span>
+            <h1>Work Expereince</h1>
+
+
+            <div class="box">
+                <div class="verticle">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class = "verticle-title">Generative AI Researcher</div>
+                    <div class="verticle-desc">
+                        <li>
+                            <ul>Generative AI Researcher specializing in pushing the boundaries of artificial intelligence, with a focus on developing innovative algorithms, models, and techniques to create and enhance generative systems for diverse applications.
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class = "verticle-title">AI/ML Engineer</div>
+                    <div class="verticle-desc">
+                        <li>
+                            <ul>Experienced AI/ML Engineer adept at orchestrating end-to-end project lifecycles, implementing cutting-edge algorithms, harnessing deep learning, and advanced techniques to optimize system performance and user satisfaction.
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class = "verticle-title">Data Engineer</div>
+                    <div class="verticle-desc">
+                        <li>
+                            <ul>Experienced Data Engineer proficient in architecting and managing cloud-based ETL pipelines, ensuring efficient data processing and storage for seamless analytics and decision-making.
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class = "verticle-title">SAP Analyst</div>
+                    <div class="verticle-desc">
+                        <li>
+                            <ul>Experienced SAP Analyst specializing in Business Intelligence (BI) and Business Warehouse (BW) solutions, adept at configuring and optimizing SAP systems to drive data-driven insights and enhance operational efficiency across the organization.".
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- education -->
+    <section class="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <a href="https://www.upes.ac.in/">
+                <img class="education-image" src="UPES.jpeg" alt="University">
+            </a>
+            <div class="education-details">
+                <h3>University of Petroleum and Energy Studies</h3>
+                <p>Degree: Bachelor of Technology</p>
+                <p>Field of Study: Petroleum Engineering </p>
+                <p>Year: 2017 - 2021</p>
+                <p>GPA: 7.28 </p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- certifications -->
+
+    <section class="certifications">
+        <h2>Certifications</h2>
+        <div class="certification-container">
+            <div class="certification">
+                <a href="https://www.credly.com/badges/814ae9f7-e2e8-459a-9d9d-48cada467cac/linked_in?t=s0oqmf">
+                    <img class="certification-image" src="AMAZON.png" alt="Certificate 1">
+                </a>
+                <div class="certification-title">AWS Certified Cloud Practitioner</div>
+            </div>
+        
+            <div class="certification">
+                <a href="https://google.accredible.com/240fae28-808c-4a97-b0a3-d71bd7aec1f2">
+                    <img class="certification-image" src="GOOGLE.png" alt="Certificate 2">
+                </a>
+                <div class="certification-title">GCP Certified Associate Cloud Engineer</div>
+            </div>
+            <!-- Add more certification items as needed -->
+        </div>
+    </section>
+
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> <!--typed js main import -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Data Scientist ',],
+            typeSpeed: 100,
+        });
+    </script>
+</body>
+
+
+
+</html>
